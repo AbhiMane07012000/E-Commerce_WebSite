@@ -8,6 +8,7 @@ import Category from './Component/Category/Category';
 import SingleProduct from './Component/SingleProduct/SingleProduct'
 import Footer from './Component/Footer/Footer';
 import About from './Component/About/About';
+import Cart from './Component/Cart/Cart';
 
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
     <Routes>
       <Route path='/' element={<Home />}/>
       <Route path='/category' element={<Category />}/>
-      <Route path='/About' element={<About/>} />
+      <Route path='/about' element={<About/>} />
+      <Route path='/cart' element={<Cart />} />
       <Route path='/product/:id' element={<SingleProduct/>} />
     </Routes>
     <Footer />

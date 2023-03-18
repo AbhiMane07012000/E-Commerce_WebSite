@@ -2,14 +2,15 @@ import React from "react";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
 import Logo from "../../Assets/bag.png";
+import Cart from  '../../Assets/cart.png'
 
 const Header = () => {
   return (
     <React.Fragment>
-      <nav className="navbar navbar-expand-lg bg-info navbar-info">
+      <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
         <div className="container-fluid">
           <NavLink className="navbar-brand" to="/">
-           <img src={Logo} alt="Logo" /><span className="Brand">Shop It</span>
+           <img src={Logo} alt="Logo" /><span className="brand-name">SHOPiFY</span>
           </NavLink>
           <button
             className="navbar-toggler"
@@ -32,6 +33,9 @@ const Header = () => {
               </NavLink>
               <NavLink className="nav-link" to="/About">
                 About
+              </NavLink>
+              <NavLink className="nav-link" to="/Cart">
+                <img src={Cart} alt="Cart" />
               </NavLink>
             </div>
           </div>
