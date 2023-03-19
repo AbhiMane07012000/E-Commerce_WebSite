@@ -2,12 +2,12 @@ import React from "react";
 import "./Header.css";
 import { NavLink } from "react-router-dom";
 import Logo from "../../Assets/bag.png";
-import Cart from  '../../Assets/cart.png'
+import CartIcon from '@mui/icons-material/ShoppingCart';
 
 const Header = () => {
   return (
     <React.Fragment>
-      <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
+      <nav className="navbar navbar-expand-lg bg-black  navbar-dark">
         <div className="container-fluid">
           <NavLink className="navbar-brand" to="/">
            <img src={Logo} alt="Logo" /><span className="brand-name">SHOPiFY</span>
@@ -35,7 +35,7 @@ const Header = () => {
                 About
               </NavLink>
               <NavLink className="nav-link" to="/Cart">
-                <img src={Cart} alt="Cart" />
+                {<CartIcon />} 
               </NavLink>
             </div>
           </div>
