@@ -5,21 +5,12 @@
 .content{
     color: white;
     font-family: 'Montserrat', sans-serif;
-    padding: 10rem 4rem 0 ;
+    font-weight: 400;
 }
 
 .content h1{
-    font-size: 60px!important;
+    font-size: 90px!important;
     font-weight: 800;
-}
-
-.content p{
-    font-size: 20px!important;
-    font-weight: 300;
-}
-
-.image{
-    margin: 4rem 2rem 3.5rem ;
 }
 
 .banner-img{
