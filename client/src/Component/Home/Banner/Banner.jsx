@@ -7,7 +7,7 @@ import BannerImage from "../../../Assets/banner-img.png";
 const Banner = () => {
   return (
     <React.Fragment>
-      <div className="row">
+      <div className="row banner-hero">
         <div className="col col-xs-12 col-sm-12 col-md-10 col-lg-6 col-xl-6 col-xxl-6  content">
           <div className="px-5 py-5">
           <h1 >SALES</h1>
