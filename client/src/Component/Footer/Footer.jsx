@@ -1,11 +1,72 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import EmailIcon from "@mui/icons-material/Email";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import HeadphonesIcon from "@mui/icons-material/Headphones";
+import SpeakerIcon from "@mui/icons-material/Speaker";
+import WatchIcon from "@mui/icons-material/Watch";
 
-
+import './Footer.css'
 
 const Footer = () => {
   return (
     <React.Fragment>
-      <h1>footer</h1>
+      <div className="container-fluid footer">
+        <div className="p-5 row">
+          <div className="p-5 col col-lg-3 col-md-6 col-sm-12">
+            <h6>About</h6>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus. Amet venenatis urna cursus eget nunc scelerisque. Molestie at elementum eu facilisis sed odio. Tincidunt tortor aliquam nulla facilisi cras fermentum odio.
+            </p>
+          </div>
+          <div className="p-5 col col-lg-3 col-md-6 col-sm-12">
+            <h6>Contact</h6>
+            <div className="py-1 d-flex d-xxl-flex flex-row">
+              <LocationOnIcon /> <p>Old Sanghvi, Pune-411027</p>
+            </div>
+            <div className="py-1 d-flex d-xxl-flex flex-row">
+              <LocalPhoneIcon /> <p>+91889999558742</p>
+            </div>
+            <div className="py-1 d-flex d-xxl-flex flex-row">
+              <EmailIcon /> <p>shopify_example@email.com</p>
+            </div>
+          </div>
+          <div className="p-5 col col-lg-3 col-md-6 col-sm-12">
+            <h6>Categories</h6>
+            <NavLink className="py-1 nav-link" to="/category/:id">
+              <div className="py-1 d-flex d-xxl-flex flex-row">
+                <HeadphonesIcon /> <p className="ps-1">Headphones</p>
+              </div>
+            </NavLink>
+            <NavLink className="py-1 nav-link" to="/category/:id">
+              <div className="py-1 d-flex d-xxl-flex flex-row">
+                <WatchIcon /> <p className="ps-1">Smart Watches</p>
+              </div>
+            </NavLink>
+            <NavLink className="py-2 nav-link" to="/category/:id">
+              <div className="py-1 d-flex d-xxl-flex flex-row">
+                <SpeakerIcon /> <p className="ps-1">Speakers</p>
+              </div>
+            </NavLink>
+          </div>
+          <div className="p-5 col col-lg-3 col-md-6 col-sm-12">
+            <h6>Pages</h6>
+            <NavLink className="py-1 nav-link" to="/">
+              <p>Home</p>
+            </NavLink>
+            <NavLink className="py-1 nav-link" to="/category/">
+               <p>Category</p>
+            </NavLink>
+            <NavLink className="py-1 nav-link" to="/about">
+              <p>About</p>
+            </NavLink>
+            <NavLink className="py-1 nav-link" to="/about">
+              <p>Policy & Terms</p>
+            </NavLink>
+          </div>
+        </div>
+      </div>
     </React.Fragment>
   );
 };

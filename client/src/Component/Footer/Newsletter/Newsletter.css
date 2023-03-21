@@ -3,11 +3,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
   height: 400px;
   justify-content: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  display: flex;
+  padding: 10%;
   width: 100%;
 }
 
@@ -50,7 +51,7 @@
 
 @media screen and (max-width: 576px) {
   .newsletter{
-    padding: 30px;
+    padding: 70px 30px;
   }
 
   .newsletter-heading {

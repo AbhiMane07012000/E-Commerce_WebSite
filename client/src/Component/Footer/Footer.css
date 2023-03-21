@@ -1,0 +1,27 @@
+.footer{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer h6{
+    font-weight: 600;
+}
+
+.footer p{
+    font-size: 14px;
+}
+
+
+
+
+
+@media screen and (max-width: 720px) {
+    .footer p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer p{
+        font-size: 14px;
+    }
+}

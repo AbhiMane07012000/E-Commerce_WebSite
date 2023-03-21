@@ -7,7 +7,7 @@ import CartIcon from '@mui/icons-material/ShoppingCart';
 const Header = () => {
   return (
     <React.Fragment>
-      <nav className="navbar navbar-expand-lg bg-black  navbar-dark">
+      <nav className="sticky-top navbar navbar-expand-lg bg-black  navbar-dark">
         <div className="container-fluid">
           <NavLink className="navbar-brand" to="/">
            <img src={Logo} alt="Logo" /><span className="brand-name">SHOPiFY</span>

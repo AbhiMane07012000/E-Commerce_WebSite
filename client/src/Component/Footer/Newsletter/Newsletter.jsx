@@ -6,7 +6,7 @@ const Newsletter = () => {
     <React.Fragment>
       <div className="container-fluid text-center newsletter">
         <div className="row">
-          <div className="col  p-5">
+          <div className="col">
             <p className="newsletter-heading">Newsletter</p>
             <p className="newsletter-p">Sign up for Latest Upadates & Offers</p>
             <div className="form">
