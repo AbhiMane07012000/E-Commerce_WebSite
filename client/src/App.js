@@ -6,6 +6,7 @@ import Header from './Component/Header/Header';
 import Home from './Component/Home/Home';
 import Category from './Component/Home/Category/Category';
 import SingleProduct from './Component/Home/SingleProduct/SingleProduct'
+import Newsletter from './Component/Footer/Newsletter/Newsletter';
 import Footer from './Component/Footer/Footer';
 import About from './Component/About/About';
 import Cart from './Component/Cart/Cart';
@@ -22,6 +23,7 @@ function App() {
       <Route path='/cart' element={<Cart />} />
       <Route path='/product/:id' element={<SingleProduct/>} />
     </Routes>
+    <Newsletter />
     <Footer />
    </React.Fragment>
   );

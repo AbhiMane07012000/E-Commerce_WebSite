@@ -1,11 +1,11 @@
 import React from "react";
 
-import Newsletter from "./Newsletter/Newsletter";
+
 
 const Footer = () => {
   return (
     <React.Fragment>
-      <Newsletter />
+      <h1>footer</h1>
     </React.Fragment>
   );
 };
