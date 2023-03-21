@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="p-5 col col-lg-3 col-md-6 col-sm-12">
             <h6>About</h6>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat vestibulum lectus. Amet venenatis urna cursus eget nunc scelerisque. Molestie at elementum eu facilisis sed odio. Tincidunt tortor aliquam nulla facilisi cras fermentum odio.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium aenean pharetra magna ac placerat.
             </p>
           </div>
           <div className="p-5 col col-lg-3 col-md-6 col-sm-12">
@@ -60,9 +60,6 @@ const Footer = () => {
             </NavLink>
             <NavLink className="py-1 nav-link" to="/about">
               <p>About</p>
-            </NavLink>
-            <NavLink className="py-1 nav-link" to="/about">
-              <p>Policy & Terms</p>
             </NavLink>
           </div>
         </div>
