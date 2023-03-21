@@ -1,0 +1,16 @@
+.about{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about h4{
+    font-weight: 500;
+}
+
+@media screen and (max-width: 576px) {
+    .about h4{
+        font-size: 14px;
+    }
+    .map{
+        width: 100%!important ;
+    }
+}
