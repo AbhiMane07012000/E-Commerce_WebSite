@@ -1,12 +1,15 @@
 import React from "react";
 import Banner from "./Banner/Banner";
+import Categories from "./Categories/Categories";
+import Products from "./Products/Products";
 
 const Home = () => {
   return (
     <React.Fragment>
-      <div className="container-fluid">
+      
         <Banner />
-      </div>
+        <Categories />
+        <Products />
     </React.Fragment>
   );
 };
