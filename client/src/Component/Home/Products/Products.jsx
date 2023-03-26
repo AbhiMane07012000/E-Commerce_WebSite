@@ -2,13 +2,13 @@ import React from "react";
 
 import Product from "./Product/Product";
 
-const Products = () => {
+const Products = (props) => {
   return (
     <React.Fragment>
       <div className="container-fluid">
-        <h4 className="ps-3">
-          <u>Popular Products</u>
-        </h4>
+       {!props.innerPage && <h4 className="ps-3">
+          <u>{props.headingText}</u>
+        </h4> }
         <div className="px-4 row">
           <div className="col col-lg-3 col-md-4 col-sm-6">
             <Product />

@@ -9,7 +9,7 @@ const Home = () => {
       
         <Banner />
         <Categories />
-        <Products />
+        <Products headingText="Popular Product" />
     </React.Fragment>
   );
 };
