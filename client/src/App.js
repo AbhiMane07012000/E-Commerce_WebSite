@@ -11,10 +11,16 @@ import Footer from './Component/Footer/Footer';
 import About from './Component/About/About';
 import Cart from './Component/Cart/Cart';
 
+import store from './store/store'
+import {Provider} from 'react-redux'
+
+
+
 
 function App() {
   return (
    <React.Fragment>
+    <Provider store={store}>
     <Header />
     <Routes>
       <Route path='/' element={<Home />}/>
@@ -25,6 +31,8 @@ function App() {
     </Routes>
     <Newsletter />
     <Footer />
+    </Provider>
+   
    </React.Fragment>
   );
 }

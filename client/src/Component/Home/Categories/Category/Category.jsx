@@ -1,15 +1,12 @@
 import React from "react";
 
-import Headphones from "../../../../Assets/products/earbuds-prod-1.webp";
-
-
-const Category = () => {
+const Category = (props) => {
   return (
     <>
-      <div class="card bg-info bg-opacity-25 ">
+      <div className="card bg-info bg-opacity-25 ">
         
-        <p className="h1 z-1">Category</p>
-        <img src={Headphones} className="card-img-top" alt="..." />
+        
+        <img src={props.img} className=" card-img-top" alt="CategoryImg" />
       
       </div>
     </>
