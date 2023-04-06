@@ -32,7 +32,7 @@ const About = () => {
           </div>
           <div className=" col col-lg-6 col-md-12 col-sm-12">
             <h4>Enquiry</h4>
-            <form>
+            <form action="abhijeet.nitin.mane@gmail.com" method="get" enctype="text/plain">
               <label for="fullName" class="pt-3 form-label">
                 Full Name
               </label>
