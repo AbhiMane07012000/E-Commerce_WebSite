@@ -1,3 +1,23 @@
-.product-card{
-    background-image: radial-gradient( circle farthest-corner at 83.7% 4.3%,  rgba(173,0,171,1) 0%, rgba(15,51,92,1) 90% );
+.product-card {
+  background-image: radial-gradient(
+    circle farthest-corner at 83.7% 4.3%,
+    rgba(173, 0, 171, 1) 0%,
+    rgba(15, 51, 92, 1) 90%
+  );
+}
+
+.product-title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+.product-transform{
+    transition: all ease 0.3s;
+    display: block;
+}
+
+.product-transform:hover{
+    transform: scale(1.1);
 }

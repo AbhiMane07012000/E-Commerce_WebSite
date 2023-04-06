@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useCallback, useEffect } from "react";
 
 import Banner from "./Banner/Banner";
 import Categories from "./Categories/Categories";
@@ -6,30 +6,50 @@ import Products from "./Products/Products";
 
 import { fetchDataFromApi } from "../../utils/api";
 
-import {useDispatch} from 'react-redux'
-import { setCategory } from "../../store/slices/shopifySlice";
+import {  useDispatch ,useSelector} from "react-redux";
+import { setCategories, setProducts } from "../../Store/shopifySlice";
+
 
 
 const Home = () => {
+  
+  
+  const dispatch = useDispatch();
+  const allproduct = useSelector((state) => state.shopify.products);
 
-  const dispatch = useDispatch(); 
+  const getCategories = useCallback( async () => {
+    try {
+      const data = await fetchDataFromApi("/api/categories?populate=*");
 
-
-  useEffect(()=>{
+      dispatch(setCategories(data));
+    } catch (err) {
+      console.log(err);
+      return err;
+    }
+  },[dispatch])
+  useEffect(() => {
     getCategories();
-  },[])  
+  }, [getCategories]);
 
-  const getCategories=() =>{
-      fetchDataFromApi("/api/categories?populate=*").then(res=>{
-        dispatch(setCategory(res));
-      })
-  }
+  const getProducts = useCallback(async () => {
+    try {
+      const data = await fetchDataFromApi("/api/products?populate=*");
+      dispatch(setProducts(data));
+    } catch (err) {
+      console.log(err);
+      return err;
+    }
+  }, [dispatch]);
+ 
+  useEffect(() => {
+    getProducts();
+  }, [getProducts]);
 
   return (
     <React.Fragment>
-        <Banner />
-        <Categories />
-        <Products headingText="Popular Product" />
+      <Banner />
+      <Categories key="Cat" />
+      <Products  headingText="Popular Product" allproduct={allproduct} />
     </React.Fragment>
   );
 };

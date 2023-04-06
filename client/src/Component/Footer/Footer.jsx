@@ -6,7 +6,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import HeadphonesIcon from "@mui/icons-material/Headphones";
 import SpeakerIcon from "@mui/icons-material/Speaker";
 import WatchIcon from "@mui/icons-material/Watch";
-
+import EarbudsIcon from '@mui/icons-material/Earbuds';
 import './Footer.css'
 
 const Footer = () => {
@@ -34,19 +34,24 @@ const Footer = () => {
           </div>
           <div className="p-5 col col-lg-3 col-md-6 col-sm-12">
             <h6>Categories</h6>
-            <NavLink className="py-1 nav-link" to="/category/:id">
+            <NavLink className="py-1 nav-link" to="/category/1">
               <div className="py-1 d-flex d-xxl-flex flex-row">
                 <HeadphonesIcon /> <p className="ps-1">Headphones</p>
               </div>
             </NavLink>
-            <NavLink className="py-1 nav-link" to="/category/:id">
+            <NavLink className="py-1 nav-link" to="/category/4">
               <div className="py-1 d-flex d-xxl-flex flex-row">
                 <WatchIcon /> <p className="ps-1">Smart Watches</p>
               </div>
             </NavLink>
-            <NavLink className="py-2 nav-link" to="/category/:id">
+            <NavLink className="py-2 nav-link" to="/category/3">
               <div className="py-1 d-flex d-xxl-flex flex-row">
                 <SpeakerIcon /> <p className="ps-1">Speakers</p>
+              </div>
+            </NavLink>
+            <NavLink className="py-2 nav-link" to="/category/2">
+              <div className="py-1 d-flex d-xxl-flex flex-row">
+                <EarbudsIcon /> <p className="ps-1">Wireless Earbuds</p>
               </div>
             </NavLink>
           </div>
@@ -55,8 +60,8 @@ const Footer = () => {
             <NavLink className="py-1 nav-link" to="/">
               <p>Home</p>
             </NavLink>
-            <NavLink className="py-1 nav-link" to="/category/">
-               <p>Category</p>
+            <NavLink className="py-1 nav-link" to="/products">
+               <p> All Products</p>
             </NavLink>
             <NavLink className="py-1 nav-link" to="/about">
               <p>About</p>
