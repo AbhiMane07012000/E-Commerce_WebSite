@@ -6,6 +6,7 @@ const initialState = {
   product: [],
   cartItems: [],
   SubTotal: [],
+  isLogin : false
 };
 
 const shopifySlice = createSlice({
@@ -63,6 +64,10 @@ const shopifySlice = createSlice({
       });
       state.SubTotal = sum;
     },
+    setIsLogin : (state,action) =>{
+      state.isLogin=false
+    },
+   
   },
 });
 
@@ -75,5 +80,6 @@ export const {
   setIncrementQuantity,
   setDecrementQuantity,
   getSubTotalPrice,
+  setIsLogin
 } = shopifySlice.actions;
 export default shopifySlice.reducer;

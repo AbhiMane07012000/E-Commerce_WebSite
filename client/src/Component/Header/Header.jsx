@@ -8,6 +8,7 @@ import {useSelector} from 'react-redux';
 const Header = () => {
 
   const cartItems = useSelector((state) => state.shopify.cartItems);
+  const isLogin = useSelector((state) => state.shopify.isLogin)
 
   return (
     <React.Fragment>
@@ -39,11 +40,14 @@ const Header = () => {
               <NavLink className=" nav-link" to="/about">
                 <button className="btn border-0 fw-medium text-white">About</button>
               </NavLink>
-              <NavLink className="nav-link" to="/cart">
+              {/* <NavLink className=" nav-link" to="/login">
+                <button className="btn border-0 fw-medium text-white">Sign up</button>
+              </NavLink> */}
+             {!isLogin && <NavLink className="nav-link" to="/cart">
                   <button className="btn border-0 text-white postion-relative">
                   {<CartIcon />}<span className="position-absolute top-0 end-0 m-3  badge bg-white text-dark rounded-pill d-none d-lg-block">{cartItems.length} </span>
                   </button>
-              </NavLink>
+              </NavLink>}
             </div>
           </div>
         </div>

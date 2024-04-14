@@ -11,6 +11,7 @@ import { setCategories, setProducts } from "../../Store/shopifySlice";
 
 
 
+
 const Home = () => {
   
   

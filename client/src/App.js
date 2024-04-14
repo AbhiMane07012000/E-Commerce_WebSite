@@ -10,11 +10,14 @@ import Newsletter from './Component/Footer/Newsletter/Newsletter';
 import Footer from './Component/Footer/Footer';
 import About from './Component/About/About';
 import Cart from './Component/Cart/Cart';
+import Login from './Component/Login/Login'
 import { useLocation } from "react-router-dom";
 import Products from './Component/Home/Products/Products';
 import { fetchDataFromApi } from './utils/api';
 import { setProducts } from './Store/shopifySlice';
 import { useDispatch,useSelector } from 'react-redux';
+import Success from './Component/Success/Success';
+import Failed from './Component/Failed/Failed';
 
 
 
@@ -55,6 +58,10 @@ useEffect(() => {
       <Route path='/cart' element={<Cart />} />
       <Route path='/products' element={<Products  allproduct={allproduct} />}/>
       <Route path='/product/:id' element={<SingleProduct/>} />
+      <Route path='/login' element={<Login />}/>
+      <Route path='/success' element={<Success />}/>
+      <Route path='/Failed' element={<Failed />}/>
+
     </Routes>
     <Newsletter />
     <Footer />

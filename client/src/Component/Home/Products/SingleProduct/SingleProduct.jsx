@@ -6,12 +6,15 @@ import { useParams } from "react-router-dom";
 import { fetchDataFromApi } from "../../../../utils/api";
 import { useDispatch, useSelector } from "react-redux";
 import { setProduct,setCartItems } from "../../../../Store/shopifySlice";
+import { useNavigate } from "react-router-dom";
 
 const SingleProduct = () => {
   let [Quantity, setQuantity] = useState(1);
 
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const product = useSelector((state) => state.shopify.product);
+  // const isLogin = useSelector((state) => state.shopify.isLogin);
   const { id } = useParams();
 
   
